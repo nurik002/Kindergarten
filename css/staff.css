@@ -1,0 +1,140 @@
+
+#title {
+    margin-top: 40px;
+    line-height: 200px;
+}
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile h1 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.profile h2 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+
+.img-box ul {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+    height: 0px;
+    margin: 0px;
+    opacity: 0;
+}
+
+
+.img-box ul i {
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.img-box ul li {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #88c425;
+    margin: 2px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover:after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul a {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.img-box a:hover li {
+    border-color: #fff;
+    color: #88c425;
+}
+
+a {
+    color: #88c425;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #519548;
+}
+
+i.red {
+    color: #bc0213;
+}
+
+@media (max-width: 475px) {
+    .profile {
+        margin-left: 70px;
+    }
+}
+
+/*__________________________________________________*/
+/*Profile Card 5*/
+.profile-card-5 {
+    margin-top: 20px;
+}
+
+.profile-card-5 .btn {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px 20px;
+}
+
+.profile-card-5 .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+
+}
+
+.profile-card-5 .card-img-block img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+.profile-card-5 h5 {
+    color: #4E5E30;
+    font-weight: 600;
+}
+
+.profile-card-5 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.profile-card-5 .btn-primary {
+    background-color: #4E5E30;
+    border-color: #4E5E30;
+}
+

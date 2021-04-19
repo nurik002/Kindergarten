@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* Pen Design Only */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+}
+
+
+.wrapper {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe {
+    position: relative;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #dcc1ab;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.recipe__button-details {
+    cursor: pointer;
+    position: absolute;
+    top: -18px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.recipe__button-details i {
+    font-size: 1.3rem;
+    color: #47525e;
+    outline: none;
+}
+
+.recipe__button-details:hover {
+    top: -20px;
+    background-color: #47525e;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.14), 0 5px 1px -2px rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe__button-details:hover i {
+    color: #fff;
+}
+
+.recipe__image {
+    width: 100%;
+}
+
+.recipe__infos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e5d1c1;
+    padding: 8px 15px;
+}
+
+
+.recipe__infos i {
+    color: #47525e;
+    padding-right: 6px;
+}
+
+.recipe__infos > span {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.recipe__infos > span > span {
+    font-size: 0.7rem;
+    color: #444;
+    padding-right: 4px;
+}
+
+.recipe__content {
+    position: relative;
+    padding: 1rem;
+}
+
+.recipe__title {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 475px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+/*image news*/
+
+.article_card {
+    border: 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.article_card img {
+    transition: all 0.3s ease;
+}
+
+.article_card a:hover {
+    text-decoration: none;
+}
+
+.article_card .article_date {
+
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 5%;
+    left: -9px;
+    text-align: center;
+    background-color: #276fb3;
+    color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px #00000057;
+}
+
+.article_card:hover .article_day {
+    background-color: #20578c;
+}
+
+.article_card:hover .article_month {
+    background-color: #276fb3;
+}
+
+.article_card:hover .article_date {
+    box-shadow: 5px 4px 2px -1px rgba(0, 0, 0, 0.32);
+}
+
+.article_card .article_day {
+    display: block;
+    padding: 2px 13px;
+    transition: all 0.3s ease;
+}
+
+.article_card .article_month {
+    background-color: #20578c;
+    padding: 2px 12px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.article_card a .card-text {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: #266fb3;
+}
+
+@media (max-width: 845px) {
+    .article_card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .article_card .article_date {
+        font-size: 16px;
+    }
+
+    .article_card img {
+        width: 100%;
+    }
+}
+
+/* === HEADING STYLE #2 === */
+.two h1 {
+    text-transform: capitalize;
+}
+
+.two h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    content: "";
+    background-color: #c50000;
+}
+
+.two h1 span {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+}
+
+.alt-two h1 {
+    text-align: center;
+}
+
+.alt-two h1:before {
+    left: 50%;
+    margin-left: -30px;
+}
+
+/* === BASE HEADING === */
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+

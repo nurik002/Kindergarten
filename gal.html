@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/thumbnail-gallery.css">
+
+</head>
+<body>
+<header>
+    <!-- Navigation -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info static-top  mx-background-top-linear fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <!-- Logo Image -->
+                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1557368579/logo_iqjuay.png" width="45"
+                         alt="" class="d-inline-block align-middle mr-2">
+                    <!-- Logo Text -->
+                    <span class="text-uppercase font-weight-bold">Company</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="index.html"><i class="fa fa-home pr-1"></i>Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gal.html"><i class="fa fa-image pr-1"></i>Rasimlar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="new.html"><i class="fa fa-newspaper pr-1"></i>Yangliklar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html"><i class="fa fa-user pr-1"></i>Oqtuvchilar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact"><i class="fa fa-info pr-1"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</header>
+<div class="container gallery-container">
+
+    <h1>Gallery</h1>
+
+    <p class="page-description text-center">Thumbnails With Title And Description</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/park.jpg">
+                        <img class="img-fluid" src="image/park.jpg" alt="Park">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/bridge.jpg">
+                        <img class="img-fluid" src="image/bridge.jpg" alt="Bridge">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/tunnel.jpg">
+                        <img class="img-fluid" src="image/tunnel.jpg" alt="Tunnel">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/coast.jpg">
+                        <img class="img-fluid" src="image/coast.jpg" alt="Coast">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/rails.jpg">
+                        <img class="img-fluid" src="image/rails.jpg" alt="Rails">
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="image/traffic.jpg">
+                        <img class="img-fluid" src="image/traffic.jpg" alt="Traffic">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/index.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
